@@ -1,0 +1,1070 @@
+/* General Style */
+@font-face {
+    font-family: "Hurme Sans";
+    src: url("/static/fonts/HurmeGeometricSans5.otf");
+}
+header {
+  position: relative;
+  overflow: hidden;
+}
+header .container {
+  position: relative;
+  z-index: 3;
+}
+/* Footer Style */
+.main-footer {
+    height: 250px;
+    background-color: #070716;
+    padding-top: 40px;
+    text-align: center;
+}
+.badge-container {
+    text-align: right;
+    padding-right: 40px;
+}
+.badge-container img {
+    width: 150px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.footer-links {
+    margin-top: -40px;
+}
+.footer-links a {
+    color: #6A7784;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.footer-links a:hover {
+    color: #fff;
+}
+.footer-social {
+    margin-top: 15px;
+    margin-left: -10px;
+}
+.footer-social i {
+    font-size: 26px;
+    color: #6A7784;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.footer-social i:hover {
+    color: #fff;
+}
+.copyright {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #6A7784;
+}
+@media(max-width: 1000px) {
+    .badge-container {
+        text-align: center;
+    }
+    .footer-links {
+        margin-top: 25px;
+    }
+}
+/* Button Style */
+.main-btn {
+    color: #fff;
+    background: #2689FE;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 0;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    transition: background .3s ease;
+}
+.main-btn:hover {
+    color: #fff;
+    background: #1e75dc;
+}
+
+.btn-white {
+    color: #000;
+    background: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus {
+    color: #000;
+    background: #ececec;
+}
+/* Logo Style */
+.main-logo {
+    font-family: "Hurme Sans", Arial, sans-serif;
+    color: #fff !important;
+    letter-spacing: 0px;
+    font-size: 38px;
+}
+.main-logo-dark {
+    font-family: "Hurme Sans", Arial, sans-serif;
+    color: #333 !important;
+    letter-spacing: 0px;
+    font-size: 38px;
+}
+.main-logo:active,
+.main-logo-dark:active {
+    box-shadow: none;
+}
+.main-logo:focus,
+.main-logo-dark:focus {
+    text-decoration: none;
+}
+/* Nav Bar Style */
+.nav-container-alt .top-bar {
+    background: #fefefe;
+    border-style: solid;
+    border-color: #e6e6e6;
+    border-width: 0 0 1px 0;
+}
+.top-bar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.nav-container-alt .nav-login-btn,
+.nav-container-alt .nav-login-btn:hover,
+.nav-container-alt .nav-restaurant-btn,
+.nav-container-alt .nav-restaurant-btn:hover,
+.nav-container-alt i,
+.nav-container-alt .menu-toggle-text {
+    color: #1A1A1A !important;
+}
+.nav-logo {
+    padding: 0;
+}
+.nav-left-container {
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    width: 300px;
+    margin-right: -300px;
+}
+.nav-right-container {
+    float: right;
+    padding-right: 15px;
+    padding-top: 5px;
+    width: 350px;
+    margin-left: -350px;
+    text-align: right;
+}
+.offscreen-toggle i {
+    color: #fff;
+    float: left;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.offscreen-toggle span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.nav-signup-btn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+}
+.nav-login-btn,
+.nav-login-btn:hover {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    background: transparent;
+}
+.nav-restaurant-btn,
+.nav-restaurant-btn:hover {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    background: transparent;
+    margin-right: 10px;
+}
+/* Offscreen Menu Style */
+.offscreen-container {
+  position: fixed;
+  width: 300px;
+  background: #1a1a1a;
+  left: 0;
+  height: 100%;
+  top: 0px;
+  z-index: 99999;
+  padding: 40px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: translate3d(-300px, 0, 0);
+  -moz-transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0);
+}
+.offscreen-container.reveal-nav {
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+.offscreen-menu .container {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+.offscreen-menu .container.reveal-nav {
+  -webkit-transform: translate3d(300px, 0, 0);
+  -moz-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+.offscreen-signup-btn {
+    width: 220px !important;
+    margin-bottom: 20px;
+}
+.offscreen-links li a {
+    color: #8e99a4;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.offscreen-links li a:hover {
+    color: #fff;
+}
+.offscreen-badge-container {
+    margin-top: 15px;
+}
+.offscreen-badge {
+    width: 160px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+@media(max-width: 1100px) {
+    .nav-restaurant-btn {
+        display: none;
+    }
+}
+/* Home Page Style */
+.home-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50% !important;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
+        url('/static/img/burgers_sm.jpg');
+}
+.home-banner {
+    text-align: center;
+    margin-top: 70px;
+}
+.home-banner h1 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 39px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.home-banner p {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home-banner a {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.app-overview {
+    padding-top: 80px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.overview-header h1 {
+    font-size: 33px;
+    color: #222222;
+    text-align: center;
+    margin: 0;
+}
+.overview-header span {
+    font-size: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.overview-header h2 {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+.overview-features {
+    padding-top: 20px;
+}
+.overview-feature {
+    margin-top: 60px;
+}
+.overview-feature-text {
+    float: left;
+    margin-top: 240px;
+    transform: translatey(-60%);
+    width: 90%;
+    max-width: 400px;
+}
+.overview-feature-text h1 {
+    font-size: 18px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.overview-feature-text p {
+    font-size: 19px;
+    color: #000;
+    text-align: left;
+}
+.overview-img-container {
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding-right: 7%;
+}
+.overview-img-container img {
+    height: 480px;
+}
+.feature-img-alt {
+    float: right;
+    text-align: left;
+    padding-left: 7%;
+}
+.feature-text-alt {
+    float: right;
+}
+.learn-more-btn {
+    font-size: 16px;
+    width: 90%;
+    max-width: 325px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.restaurants-join-section {
+  background-position: 50% 50% !important;
+  width: 100%;
+  height: 450px;
+  padding-top: 100px;
+  padding-left: 80px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
+    url('/static/img/sushi_sm.jpg');
+}
+.restaurants-join-section h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.restaurants-join-section p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    width: 75%;
+    max-width: 400px
+}
+.restaurants-join-section a {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 35px;
+}
+@media(max-width: 850px) {
+    .overview-img-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .overview-img-container img {
+        height: 400px;
+    }
+    .overview-feature-text {
+        float: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        transform: none;
+    }
+    .overview-feature-text h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .overview-feature-text p {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+/* About Page Styles */
+.about-bg {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), 
+        url('/static/img/table_sm.jpg') !important;
+}
+.about-header {
+    color: #fff;
+    font-size: 45px;
+}
+.about-content {
+    width: 85%;
+    max-width: 600px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about-content p {
+    color: #000;
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.about-content h1 {
+    color: #222;
+    margin-bottom: 28px;
+    font-size: 33px;
+}
+.see-features-btn {
+    font-size: 17px;
+    margin-top: 25px;
+    width: 85%;
+    max-width: 350px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 80px;
+}
+@media(max-width: 490px) {
+    .about-content p {
+        font-size: 18px;
+    }
+}
+.form-label {
+    font-size: 13px;
+    color: #666666;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.form-header {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.main-input {
+    width: 100%;
+    display: block;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 3px;
+    padding-left: 12px;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000;
+    border: solid 1px #CCCCCC;
+    margin-top: 0;
+    padding-top: 0;
+    transition: border 0.3s;
+}
+.main-input:focus {
+    outline: none;
+    border: solid 1px #2689FE;
+}
+
+.input-half-left {
+    width: 49%;
+    float: left;
+}
+.input-half-right {
+    width: 49%;
+    float: right;
+}
+
+.form-btn {
+    width: 450px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+}
+
+
+.login-bg {
+    background: #070716 !important;
+}
+
+.login-header {
+    font-size: 18px;
+    color: #ccc;
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.login-hr {
+    border-color: #53535C;
+    padding: 0;
+    margin: 0;
+    width: 145px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.signup-hr {
+    border-color: #ccc;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 34%;
+    display: table-cell;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.signup-header {
+    font-size: 30px;
+    color: #999;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 30%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: table-cell;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.user-login-btn {
+    font-size: 12px;
+    width: 400px;
+    margin-top: 35px;x
+}
+
+.restaurant-login-btn {
+    color: #000;
+    background-color: #fff;
+}
+
+.restaurant-login-btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.forgot-password-link {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.restaurants-bg {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
+        url('/static/img/restaurant_1.jpg') !important;
+}
+
+
+.about-box-header {
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 26px;
+}
+
+.about-description-box {
+    width: 80%;
+    max-width: 750px;
+    background: #f4f4f4;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.about-description {
+    color: #333333;
+    font-size: 20px;
+}
+
+.get-started-btn {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 25px;
+}
+
+.app-features-header {
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background: #0c0c27;
+    width: 185px;
+    height: 45px;
+    line-height: 45px;
+}
+.app-features-header:hover {
+    cursor: default;
+    color: #fff;
+    background: #070716;
+}
+
+.app-features-subheader {
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+}
+
+.after-feature {
+    margin-bottom: 60px;
+}
+
+.app-feature-img {
+    height: 480px;
+}
+.feature-text-box {
+    float: left;
+    margin-top: 240px;
+    transform: translatey(-60%);
+    max-width: 400px;
+    text-align: left;
+}
+
+.app-feature-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+.feature-img-box {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 7%;
+}
+.img-box-alt {
+    float: right;
+    text-align: left;
+    width: 50%;
+    padding-right: 0;
+    padding-left: 7%;
+}
+
+.text-box-alt {
+    float:right;
+    text-align: left;
+}
+.feature-header {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #323232;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 475px;
+}
+.form-label-full {
+    width: 100%;
+    max-width: 475px;
+}
+
+.cc-input {
+    width: 70%;
+    max-width: 475px;
+}
+.cvv-input {
+    width: 25%;
+}
+.cc-label {
+    width: 75% !important;
+    float: left;
+}
+.cvv-label {
+    float: left;
+}
+.form-label-exp {
+    width: 70%;
+}
+.form-label-zip {
+    width: 25;
+}
+.input-zip {
+    float: left;
+    width: 30%;
+}
+.input-exp-month {
+    width: 30%;
+    float: left;
+    margin-right: 5% !important;
+}
+.input-exp-year {
+    width: 30%;
+    float: left;
+    margin-right: 5% !important;
+}
+
+label {
+    font-weight: 300 !important;
+    text-align: left;
+}
+
+option {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 60px !important;
+    line-height: 60px !important;
+}
+.create-account-btn {
+    width: 90% !important;
+    max-width: 475px;
+    margin-top: 60px !important;
+    margin-bottom: 120px !important;
+    font-size: 16px;
+}
+
+.visible-small {
+    display: none;
+}
+
+.hr-full {
+
+}
+
+.logo-dark,
+.logo-dark:hover {
+    color: #333;
+}
+
+.signup-header {
+    color: #333;
+}
+.shortened {
+    margin-top: 0px;
+}
+
+
+@media (max-width: 1100px) {
+    .badge-container {
+        padding: 0;
+    }
+
+    .footer-badge {
+        float: none;
+        width: 150px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-bottom: 5px;
+    }
+
+    .main-footer {
+        height: 300px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-description-box {
+        width: 100%;
+    }
+    .for-restaurants {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .restaurants-subheader {
+        width: 100%;
+    }
+    .overview-tagline {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 300px) {
+    .hidden-xxs {
+        display: none;
+    }
+}
+
+@media (max-width: 490px) {
+    .push-down-xs {
+        margin-top: 20px;
+    }
+    .footer-section {
+        width: 100%;
+    }
+    .overview-header h1 {
+        font-size: 25px;
+    }
+
+    .about-box-header {
+        font-size: 25px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+    .about-description-box {
+        width: 100%;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 13%;
+        padding-bottom: 13%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .form-section {
+        width: 90% !important;
+    }
+    .hr-full {
+        width: 90%;
+    }
+    .hidden-small {
+        display: none;
+    }
+    .visible-small {
+        display: block;
+    }
+    .main-input {
+
+    }
+    .input-half-left {
+        width: 100%;
+        float: none;
+    }
+    .input-half-right {
+        width: 100%;
+        float: none;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+    .form-label-full {
+    }
+    .cc-input {
+        width: 75%;
+    }
+    .cvv-input {
+        width: 22%;
+    }
+    .cc-label {
+        width: 78% !important;
+        
+    }
+    .cvv-label {
+        
+    }
+    .form-header {
+        margin-top: 60px !important;
+    }
+    .shortened {
+        margin-top: 35px !important;
+    }
+    .form-label-exp {
+
+    }
+    .form-label-zip {
+        
+    }
+    .input-exp-month {
+        width: 48% !important;
+        margin-right: 0 !important;
+    }
+    .input-exp-year {
+        width: 48% !important;
+        float: right !important;
+        margin-right: 0 !important;
+    }
+    .input-zip {
+        width: 100%;
+    }
+    .create-account-btn {
+        margin-bottom: 80px !important;
+    }
+    .signup-hr {
+        width: 33%;
+    }
+    .signup-header {
+        font-size: 18px;
+    }
+
+    .main-action-btn {
+        margin-right: 0 !important;
+    }
+    .create-account-btn {
+        margin-top: 40px !important;
+    }
+}
+
+.select-box {
+    width: 100%;
+    display: block;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 3px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 0 !important;
+    margin-bottom: 15px;
+    color: #000;
+    border: solid 1px #CCCCCC;
+    background: #fff !important;
+    opacity: 1;
+    transition: border 0.3s;
+    transition: color 0.1s;
+}
+.select-box:focus {
+    outline: none;
+    border: solid 1px #3498DB;
+}
+.exp-input {
+    width: 30%;
+}
+
+.input-third {
+    width: 30%;
+}
+
+.select-initial {
+    color: #868686;
+}
+.select-after {
+    color: #333;
+    font-weight: bold !important;
+}
+
+::-webkit-input-placeholder {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300 !important;
+    color: #999999;
+}
+:-moz-placeholder { /* older Firefox*/
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 0 !important;
+    color: #999999;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300 !important;
+    color: #999999;
+} 
+:-ms-input-placeholder { 
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300 !important;
+    color: #999999;
+}
+
+.selector-1:hover,.selector-2:hover,.selector-3:hover {
+    cursor: pointer;
+}
+.app-features-desc {
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+.selector i {
+    color: #2689FE;
+    font-size: 11px;
+    padding-right: 12px;
+    display: inline-block;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.selector h1 {
+    color: #999999;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    display: inline-block;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.selector p {
+    font-size: 20px;
+    color: #999999;
+    padding-bottom: 35px;
+    max-width: 475px;
+    padding-left: 30px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.active-selector h1 {
+    color: #333;
+}
+.active-selector p {
+    color: #333;
+}
+.app-features-desc img {
+    height: 475px;
+    padding-right: 8%;
+}
+.app-features-desc h2 {
+    font-size: 32px;
+    margin-bottom: 70px;
+    text-align: center;
+    letter-spacing: 1px;
+}
