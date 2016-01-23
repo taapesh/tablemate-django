@@ -11,6 +11,9 @@ header .container {
   position: relative;
   z-index: 3;
 }
+.fullscreen-element {
+    min-height: 300px;
+}
 /* Footer Style */
 .main-footer {
     height: 250px;
@@ -89,7 +92,7 @@ header .container {
     -moz-transition: background .3s ease;
     transition: background .3s ease;
 }
-.main-btn:hover {
+.main-btn:hover, .main-btn:focus {
     color: #fff;
     background: #1e75dc;
 }
@@ -104,7 +107,7 @@ header .container {
 .btn-white:hover,
 .btn-white:focus {
     color: #000;
-    background: #ececec;
+    background: #efefef;
 }
 /* Logo Style */
 .main-logo {
@@ -189,7 +192,7 @@ header .container {
 }
 .nav-login-btn,
 .nav-login-btn:hover {
-    width: 100px;
+    width: 85px;
     height: 50px;
     line-height: 50px;
     font-size: 15px;
@@ -202,7 +205,28 @@ header .container {
     line-height: 50px;
     font-size: 15px;
     background: transparent;
-    margin-right: 10px;
+}
+@media(max-width: 1100px) {
+    .nav-restaurant-btn {
+        display: none;
+    }
+}
+@media(max-width: 820px) {
+    .nav-logo {
+        font-size: 30px;
+    }
+    .offscreen-toggle i {
+        font-size: 45px;
+    }
+}
+@media(max-width: 500px) {
+    .nav-logo {
+        font-size: 25px;
+        text-align: left;
+    }
+    .offscreen-toggle i {
+        font-size: 40px;
+    }
 }
 /* Offscreen Menu Style */
 .offscreen-container {
@@ -247,9 +271,9 @@ header .container {
     color: #8e99a4;
     font-size: 13px;
     font-weight: 600;
-    line-height: 30px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    
+    line-height: 30px;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
@@ -265,45 +289,42 @@ header .container {
     padding-bottom: 8px;
     padding-top: 8px;
 }
-@media(max-width: 1100px) {
-    .nav-restaurant-btn {
-        display: none;
-    }
-}
 /* Home Page Style */
 .home-bg {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-position: 50% 50% !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% 80% !important;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
-        url('/static/img/burgers_sm.jpg');
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+        url('/static/img/cake.jpg');
 }
 .home-banner {
-    text-align: center;
+    text-align: left;
+    padding-left: 8%;
     margin-top: 70px;
 }
 .home-banner h1 {
-    font-weight: 600;
+    font-size: 45px;
     color: #fff;
-    font-size: 39px;
+    font-weight: 600;
+    letter-spacing: .5px;
     margin: 0;
     margin-bottom: 15px;
 }
 .home-banner p {
     color: #fff;
-    font-size: 22px;
+    font-size: 23px;
     margin-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-weight: 400;
 }
 .home-banner a {
-    width: 200px;
+    font-size: 18px;
+    width: 175px;
     height: 50px;
     line-height: 50px;
-    margin-right: 5px;
-    margin-left: 5px;
     margin-bottom: 20px;
 }
 .app-overview {
@@ -312,13 +333,13 @@ header .container {
     margin-bottom: 0;
 }
 .overview-header h1 {
-    font-size: 33px;
+    font-size: 28px;
     color: #222222;
     text-align: center;
     margin: 0;
 }
-.overview-header span {
-    font-size: 40px;
+.overview-header h1 span {
+    font-size: 35px;
     padding-left: 6px;
     padding-right: 6px;
 }
@@ -332,7 +353,7 @@ header .container {
     padding-top: 20px;
 }
 .overview-feature {
-    margin-top: 60px;
+    margin-top: 45px;
 }
 .overview-feature-text {
     float: left;
@@ -383,15 +404,15 @@ header .container {
     margin-bottom: 100px;
 }
 .restaurants-join-section {
-  background-position: 50% 50% !important;
+  background-position: 50% 95% !important;
   width: 100%;
-  height: 450px;
+  height: 425px;
   padding-top: 100px;
   padding-left: 80px;
 
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
-    url('/static/img/sushi_sm.jpg');
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), 
+    url('/static/img/restaurant.jpg');
 }
 .restaurants-join-section h1 {
     color: #fff;
@@ -401,6 +422,7 @@ header .container {
 .restaurants-join-section p {
     color: #fff;
     font-size: 20px;
+    font-weight: 400;
     margin: 0;
     width: 75%;
     max-width: 400px
@@ -411,7 +433,7 @@ header .container {
     line-height: 50px;
     margin-top: 35px;
 }
-@media(max-width: 850px) {
+@media(max-width: 820px) {
     .overview-img-container {
         padding: 0;
         margin: 0;
@@ -438,33 +460,104 @@ header .container {
         font-size: 17px;
         text-align: center;
     }
+    .overview-header h2 {
+        font-size: 16px;
+    }
+    .overview-header h1 {
+        font-size: 25px;
+    }
+    .overview-header h1 span {
+        font-size: 33px;
+    }
+    .overview-feature {
+        margin-top: 30px;
+    }
+    .learn-more-btn {
+        margin-top: 30px;
+    }
+    .home-banner {
+        text-align: center;
+        padding-left: 0;
+    }
+    .home-banner h1 {
+        font-size: 33px;
+        margin-bottom: 0;
+    }
+    .home-banner p {
+        font-size: 20px;
+    }
+    .home-banner a {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        width: 135px;
+    }
+}
+@media(max-width: 500px) {
+    .home-banner {
+        margin-top: 125px;
+    }
+    .home-banner h1 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .home-banner p {
+        font-size: 17px;
+    }
+    .home-banner a {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        width: 135px;
+    }
 }
 /* About Page Styles */
 .about-bg {
+    background-position: 50% 60% !important;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), 
-        url('/static/img/table_sm.jpg') !important;
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), 
+        url('/static/img/meal_side.jpg') !important;
 }
 .about-header {
     color: #fff;
     font-size: 45px;
 }
+.about-banner {
+    margin-top: 70px;
+}
+.about-banner h1 {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
 .about-content {
     width: 85%;
-    max-width: 600px;
+    max-width: 650px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 .about-content p {
     color: #000;
-    font-size: 19px;
+    font-size: 18px;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 25px;
+
 }
 .about-content h1 {
     color: #222;
-    margin-bottom: 28px;
-    font-size: 33px;
+    font-size: 28px;
+    margin-bottom: 19px;
+}
+@media(max-width: 490px) {
+    .about-content {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
 }
 .see-features-btn {
     font-size: 17px;
@@ -474,11 +567,6 @@ header .container {
     height: 60px;
     line-height: 60px;
     margin-bottom: 80px;
-}
-@media(max-width: 490px) {
-    .about-content p {
-        font-size: 18px;
-    }
 }
 .form-label {
     font-size: 13px;
@@ -852,9 +940,6 @@ option {
     .footer-section {
         width: 100%;
     }
-    .overview-header h1 {
-        font-size: 25px;
-    }
 
     .about-box-header {
         font-size: 25px;
@@ -1033,7 +1118,7 @@ option {
 .selector h1 {
     color: #999999;
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0;
@@ -1045,9 +1130,11 @@ option {
 .selector p {
     font-size: 20px;
     color: #999999;
-    padding-bottom: 35px;
     max-width: 475px;
-    padding-left: 30px;
+    margin: 0;
+    padding: 0;
+    padding-left: 26px;
+    margin-bottom: 20px;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;

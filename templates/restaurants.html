@@ -21,74 +21,53 @@
         <!--[if gte IE 9]>
             <link rel="stylesheet" type="text/css" href="css/ie9.css" />
         <![endif]-->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+
         <script src="/static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <div class="loader"></div>
                 
         <div class="nav-container">
-            <nav class="top-bar overlay-bar offscreen-menu">
+            <nav class="top-bar overlay-bar offscreen-menu" style="padding-top: 30px; padding-bottom: 30px">
                 <div class="container">
-                    <div class="row nav-menu clearfix">
-                        <div class="">
-                            <a href="/" class="nav-part main-logo navbar-brand" style="">tablemate</a>
-                        </div>
-                        
-                        <div class="text-right navbar-right" style="padding-right:10px">
-
-                            <a href="log-in" class="btn main-btn login-btn hidden-xs">Log In</a>
-                            <a href="register" class="btn main-btn signup-btn hidden-xs">Sign Up</a>
-                        
+                    <div class="row" align="center">
+                        <div class="nav-left-container">
                             <span class="offscreen-toggle">
-                                <i class="menu-btn icon icon_menu text-white"></i>
+                                <i class="icon icon_menu"></i>
+                                <span class="hidden-xs">Menu</span>
                             </span>
                         </div>
-                    </div><!--end of row-->
-                    
-                    <div class="row" style="padding-top: 15px">
-                        <div class="col-sm-12">
-                            <hr class="no-margin">
+
+                        <a href="/" class="btn main-logo nav-logo">tablemate</a>
+                        <div class="nav-right-container hidden-xs" style="">
+                            <a href="#" class="btn main-btn nav-restaurant-btn">For Restaurants</a>
+                            <a href="log-in" class="btn main-btn nav-login-btn">Log In</a>
+                            <a href="register" class="btn main-btn nav-signup-btn">Sign Up</a>
                         </div>
                     </div><!--end of row-->
-                    
+                    <hr style="padding-top: 30px">
                 </div><!--end of container-->
-                
-                
             </nav>
+        </div>
         
         <div class="offscreen-container">
-                <div class="main-logo nav-logo">tablemate</div>
+            <div class="btn main-btn offscreen-signup-btn">Sign Up</div>
 
-                <ul class="menu">
-                    <li><a href="/" target="default">Home</a></li>
-                    <li><a href="#services" class="inner-link" target="default">Features</a></li>
-                    <li><a href="about" class="inner-link" target="default">About</a></li>
-                    <li><a href="#work" class="inner-link" target="default">Terms</a></li>
-                    <li><a href="#testimonials" class="inner-link" target="default">Partner</a></li>
-                </ul>
+            <ul class="offscreen-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="features">App Features</a></li>
+                <li><a href="restaurants">For Restaurants</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="log-in">Log In</a></li>
+            </ul>
 
-                <ul class="social-icons pull-right">
-                    <li>
-                        <a href="#">
-                            <i class="icon social_twitter"></i>
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#">
-                            <i class="icon social_facebook"></i>
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#">
-                            <i class="icon social_instagram"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="offscreen-badge-container">
+                <img class="offscreen-badge" src="/static/img/app_store_badge.png"></img>
+                <img class="offscreen-badge" src="/static/img/google_play_badge.png"></img>
             </div>
         </div>
+        
         <div class="main-container"><a id="home" class="in-page-link"></a>
             <header class="no-pad centered-text" style="height: 550px">
                 <div class="background-image-holder parallax-background restaurants-bg"></div>
@@ -107,7 +86,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h1>Check out what we're<br>bringing to the table</h1>
+                            <h1>Header goes here</h1>
                         </div>
                     </div><!--end of row-->
         
@@ -164,26 +143,24 @@
         </div>
 
         <div class="main-footer main-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12" align="center" style="padding-top: 25px">
-
-                        <div class="footer-section">
-                            <a href="about" class="footer-link">About</a>
-                            <a href="#" class="footer-link">Terms</a>
-                            <a href="#" class="footer-link">Help</a>
-                        </div>
-
-                        <div class="footer-section">
-                            <a href="#"><i class="icon social_facebook footer-social"></i></a>
-                            <a href="#"><i class="icon social_twitter footer-social"></i></a>
-                            <a href="#"><i class="icon social_instagram footer-social"></i></a>
-                        </div>
-
-                        <div class="copyright text-center" style="padding-top: 20px">© 2016 tablemate</div>
-                    </div>
-                </div>
+            <div class="badge-container">
+                <a href="#"><img src="/static/img/app_store_badge.png"></img></a>
+                <a href="#"><img src="/static/img/google_play_badge.png"></img></a>
             </div>
+
+            <div class="footer-links">
+                <a href="about">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="icon social_facebook"></i></a>
+                <a href="#"><i class="icon social_twitter"></i></a>
+                <a href="#"><i class="icon social_instagram"></i></a>
+            </div>
+
+            <div class="copyright">© 2016 tablemate</div>
         </div>
                 
         <script src="/static/js/jquery.min.js"></script>

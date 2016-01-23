@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #777777;
   font-size: 18px;
@@ -26,7 +26,7 @@ h4,
 h5,
 h5,
 h6 {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 300;
   color: #333333;
   margin: 0px;
@@ -38,7 +38,7 @@ ul {
 }
 
 a {
-  font-family: "Open Sans";
+  font-family: "Source Sans Pro";
   font-weight: 300;
 }
 
@@ -78,11 +78,10 @@ strong {
   font-weight: 600;
 }
 p {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 300;
   line-height: 24px;
-  color: #777;
+  color: #222;
 }
 p:last-child {
   margin-bottom: 0px;

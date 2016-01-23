@@ -168,6 +168,12 @@ $(document).ready(function(){
 		$(this).css('height', $(window).height());
 	});
 
+    $(window).resize(function() {
+        $('.fullscreen-element').each(function(){
+            $(this).css('height', $(window).height());
+        });
+    });
+
 	// Feature Selector
     var okSwitch = 0;
 	$('.selector-1').click(function(){
