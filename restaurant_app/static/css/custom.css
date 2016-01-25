@@ -1,19 +1,219 @@
 /* General Style */
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #222;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #FBFBFB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+  color: #222;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+a {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 28px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 26px;
+  line-height: 32px;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+strong {
+  font-weight: 600;
+}
+p {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #222;
+}
+p:last-child {
+  margin-bottom: 0px;
+}
 @font-face {
     font-family: "Hurme Sans";
     src: url("/static/fonts/HurmeGeometricSans5.otf");
 }
-header {
-  position: relative;
-  overflow: hidden;
-}
-header .container {
-  position: relative;
-  z-index: 3;
-}
 .fullscreen-element {
     min-height: 300px;
 }
+/* End General Style */
+/* Button Style */
+/* Button Style */
+.main-btn {
+    color: #fff;
+    background: #2689FE;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 0;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    transition: background .3s ease;
+}
+.main-btn:hover, .main-btn:focus {
+    color: #fff;
+    background: #157ef4;
+}
+
+.btn-white {
+    color: #000;
+    background: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active {
+    color: #000;
+    background: #efefef;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus {
+    color: #fff;
+    background: transparent;
+    text-decoration: none;
+}
+/* End Button Style */
+
+/* Navbar Style */
+.main-navbar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent !important;
+    background: transparent !important;
+    margin-bottom: 0;
+}
+.navbar-links {
+    padding-top: 15px;
+    text-align: right;
+    float: right;
+}
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.nav-logo {
+    float: left;
+    padding-top: 14px;
+    padding-left: 14px;
+}
+.nav-link:hover {
+    background: transparent !important;
+}
+.nav-signup-btn {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 2px;
+    background: #2689FE;
+    margin-left: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease;
+}
+.nav-signup-btn:hover, .nav-signup-btn:focus {
+    background: #157ef4 !important;
+}
+.menu-toggle {
+    color: #fff;
+    font-size: 30px;
+    float: left;
+    display: none;
+    padding-left: 14px;
+}
+@media(max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: inline-block;
+    }
+    .nav-logo {
+        font-size: 26px !important;
+        float: right;
+        margin-right: 50%;
+        transform: translatex(50%);
+        margin-top: 5px;
+        padding: 0;
+    }
+}
+@media(max-width: 490px) {
+    .nav-logo {
+        margin-top: 0;
+        font-size: 20px !important;
+    }
+    .menu-toggle {
+        font-size: 22px;
+    }
+}
+/* End Navbar Style */
+
 /* Footer Style */
 .main-footer {
     height: 250px;
@@ -77,37 +277,325 @@ header .container {
         margin-top: 25px;
     }
 }
-/* Button Style */
-.main-btn {
-    color: #fff;
-    background: #2689FE;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 2px;
-    padding: 0;
-    width: 125px;
-    height: 40px;
-    line-height: 40px;
-    -webkit-transition: background .3s ease;
-    -moz-transition: background .3s ease;
-    transition: background .3s ease;
-}
-.main-btn:hover, .main-btn:focus {
-    color: #fff;
-    background: #1e75dc;
-}
+/* End Footer Style */
 
-.btn-white {
-    color: #000;
-    background: #fff;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #fff;
+/* Home Page Style */
+.home-bg {
+    margin-top: -100px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50% !important;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .25)), 
+        url('/static/img/cake.jpg');
 }
-.btn-white:hover,
-.btn-white:focus {
+.home-banner {
+    text-align: left;
+    padding-left: 8%;
+    padding-top: 220px;
+}
+.home-banner h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+ 
+    margin: 0;
+    margin-bottom: 15px;
+}
+.home-banner p {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.home-banner a {
+    font-size: 18px;
+    width: 175px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.app-overview {
+    padding-top: 80px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.overview-header h1 {
+    font-size: 28px;
+    color: #222222;
+    text-align: center;
+    margin: 0;
+}
+.overview-header h1 span {
+    font-size: 35px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.overview-header h2 {
+    font-size: 20px;
+    font-weight: 300;
     color: #000;
-    background: #efefef;
+    text-align: center;
+    margin: 0;
+}
+.overview-features {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.overview-feature {
+    margin-top: 65px;
+}
+.overview-feature-text {
+    float: left;
+    margin-top: 125px;
+    width: 90%;
+    max-width: 400px;
+    -webkit-transition: all .45s ease;
+    -moz-transition: all .45s ease;
+    transition: all .45s ease;
+}
+.overview-feature-revealed {
+    margin-top: 0 !important;
+    transform: none !important;
+}
+.overview-feature-text h1 {
+    font-size: 18px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.overview-feature-text p {
+    font-size: 19px;
+    color: #000;
+    text-align: left;
+}
+.overview-img-container {
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding-right: 7%;
+}
+.overview-img-container img {
+    height: 480px;
+}
+.feature-img-alt {
+    float: right;
+    text-align: left;
+    padding-left: 7%;
+}
+.feature-text-alt {
+    float: right;
+}
+.learn-more-toggle {
+    padding-left: 0;
+    font-size: 22px;
+    width: 100%;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #4C545A;
+    text-align: left;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transition: color .0s ease;
+    -moz-transition: color .0s ease;
+    transition: color .0s ease;
+}
+.learn-more-toggle:hover {
+    color: #2689FE;
+    cursor: pointer;
+}
+.learn-more-toggle i {
+    padding-right: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    display: inline-block;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.learn-more-toggle span {
+    display: table-cell;
+    vertical-align: middle;
+    display: inline-block;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.more-info {
+    text-align: left;
+}
+.info-toggled {
+    font-size: 30px;
+    margin-left: 50%;
+    transform: translatex(-50%);
+    margin-top: -30px;
+}
+.restaurants-join-section {
+  background-position: 50% 95% !important;
+  width: 100%;
+  height: 425px;
+  padding-top: 100px;
+  padding-left: 80px;
+
+  background-image:
+    linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), 
+    url('/static/img/restaurant.jpg');
+}
+.restaurants-join-section h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.restaurants-join-section p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    width: 75%;
+    max-width: 400px
+}
+.restaurants-join-section a {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 35px;
+    font-size: 18px;
+}
+@media(max-width: 820px) {
+    .overview-img-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .overview-img-container img {
+        height: 400px;
+    }
+    .overview-feature-text {
+        float: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        transform: none;
+    }
+    .overview-feature-text h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .overview-feature-text p {
+        font-size: 17px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .overview-header h2 {
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .overview-header h1 {
+        font-size: 25px;
+    }
+    .overview-header h1 span {
+        font-size: 33px;
+    }
+    .overview-feature {
+        margin-bottom: 25px;
+        margin-bottom: 0;
+    }
+    .learn-more-btn {
+        margin-top: 30px;
+    }
+    .home-banner {
+        text-align: center;
+        padding-left: 0;
+    }
+    .home-banner h1 {
+        font-size: 33px;
+        margin-bottom: 0;
+    }
+    .home-banner p {
+        font-size: 20px;
+    }
+    .home-banner a {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        width: 135px;
+    }
+    .more-info {
+        padding-top: 0;
+        margin-top: 0;
+        text-align: left !important;
+    }
+    .overview-feature-revealed {
+        margin-top: 15px !important;
+    }
+    .feature-learn-more {
+        margin-bottom: 15px;
+    }
+    .learn-more-toggle {
+        text-align: left;
+        padding-left: 5%;
+    }
+    .info-toggled {
+        margin-bottom: 15px;
+        margin-top: 13px;
+        transform: none;
+        margin-left: 50%;
+        transform: translatex(-50%);
+    }
+}
+@media(max-width: 500px) {
+    .home-banner h1 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+    .home-banner p {
+        font-size: 17px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .home-banner a {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        width: 135px;
+    }
+    .restaurants-join-section {
+        height: 375px;
+        padding-top: 30%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .restaurants-join-section h1 {
+        font-size: 30px;
+        line-height: 30px;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-bottom: 10px;
+    }
+    .restaurants-join-section p {
+        font-size: 18px;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+/* End Home Page Style */
+.text-white {
+  color: #fff;
 }
 /* Logo Style */
 .main-logo {
@@ -150,9 +638,6 @@ header .container {
 .nav-container-alt .menu-toggle-text {
     color: #1A1A1A !important;
 }
-.nav-logo {
-    padding: 0;
-}
 .nav-left-container {
     float: left;
     text-align: left;
@@ -184,14 +669,9 @@ header .container {
     line-height: 50px;
     cursor: pointer;
 }
-.nav-signup-btn {
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 15px;
-}
 .nav-login-btn,
-.nav-login-btn:hover {
+.nav-login-btn:hover,
+.nav-login-btn:focus {
     width: 85px;
     height: 50px;
     line-height: 50px;
@@ -199,7 +679,8 @@ header .container {
     background: transparent;
 }
 .nav-restaurant-btn,
-.nav-restaurant-btn:hover {
+.nav-restaurant-btn:hover,
+.nav-restaurant-btn:focus {
     width: 100px;
     height: 50px;
     line-height: 50px;
@@ -212,18 +693,11 @@ header .container {
     }
 }
 @media(max-width: 820px) {
-    .nav-logo {
-        font-size: 30px;
-    }
     .offscreen-toggle i {
         font-size: 45px;
     }
 }
 @media(max-width: 500px) {
-    .nav-logo {
-        font-size: 25px;
-        text-align: left;
-    }
     .offscreen-toggle i {
         font-size: 40px;
     }
@@ -290,227 +764,7 @@ header .container {
     padding-top: 8px;
 }
 /* Home Page Style */
-.home-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 70% 80% !important;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
-        url('/static/img/cake.jpg');
-}
-.home-banner {
-    text-align: left;
-    padding-left: 8%;
-    margin-top: 70px;
-}
-.home-banner h1 {
-    font-size: 45px;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: .5px;
-    margin: 0;
-    margin-bottom: 15px;
-}
-.home-banner p {
-    color: #fff;
-    font-size: 23px;
-    margin-bottom: 30px;
-    font-weight: 400;
-}
-.home-banner a {
-    font-size: 18px;
-    width: 175px;
-    height: 50px;
-    line-height: 50px;
-    margin-bottom: 20px;
-}
-.app-overview {
-    padding-top: 80px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.overview-header h1 {
-    font-size: 28px;
-    color: #222222;
-    text-align: center;
-    margin: 0;
-}
-.overview-header h1 span {
-    font-size: 35px;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-.overview-header h2 {
-    font-size: 20px;
-    color: #000;
-    text-align: center;
-    margin: 0;
-}
-.overview-features {
-    padding-top: 20px;
-}
-.overview-feature {
-    margin-top: 45px;
-}
-.overview-feature-text {
-    float: left;
-    margin-top: 240px;
-    transform: translatey(-60%);
-    width: 90%;
-    max-width: 400px;
-}
-.overview-feature-text h1 {
-    font-size: 18px;
-    color: #222;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 0px;
-    text-align: left;
-}
-.overview-feature-text p {
-    font-size: 19px;
-    color: #000;
-    text-align: left;
-}
-.overview-img-container {
-    float: left;
-    width: 50%;
-    text-align: right;
-    padding-right: 7%;
-}
-.overview-img-container img {
-    height: 480px;
-}
-.feature-img-alt {
-    float: right;
-    text-align: left;
-    padding-left: 7%;
-}
-.feature-text-alt {
-    float: right;
-}
-.learn-more-btn {
-    font-size: 16px;
-    width: 90%;
-    max-width: 325px;
-    height: 60px;
-    line-height: 60px;
-    margin-top: 120px;
-    margin-bottom: 100px;
-}
-.restaurants-join-section {
-  background-position: 50% 95% !important;
-  width: 100%;
-  height: 425px;
-  padding-top: 100px;
-  padding-left: 80px;
 
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), 
-    url('/static/img/restaurant.jpg');
-}
-.restaurants-join-section h1 {
-    color: #fff;
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-.restaurants-join-section p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0;
-    width: 75%;
-    max-width: 400px
-}
-.restaurants-join-section a {
-    width: 200px;
-    height: 50px;
-    line-height: 50px;
-    margin-top: 35px;
-}
-@media(max-width: 820px) {
-    .overview-img-container {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        float: none;
-        text-align: center;
-    }
-    .overview-img-container img {
-        height: 400px;
-    }
-    .overview-feature-text {
-        float: none;
-        margin: 0;
-        padding: 0;
-        margin-top: 15px;
-        margin-bottom: 40px;
-        transform: none;
-    }
-    .overview-feature-text h1 {
-        font-size: 18px;
-        text-align: center;
-    }
-    .overview-feature-text p {
-        font-size: 17px;
-        text-align: center;
-    }
-    .overview-header h2 {
-        font-size: 16px;
-    }
-    .overview-header h1 {
-        font-size: 25px;
-    }
-    .overview-header h1 span {
-        font-size: 33px;
-    }
-    .overview-feature {
-        margin-top: 30px;
-    }
-    .learn-more-btn {
-        margin-top: 30px;
-    }
-    .home-banner {
-        text-align: center;
-        padding-left: 0;
-    }
-    .home-banner h1 {
-        font-size: 33px;
-        margin-bottom: 0;
-    }
-    .home-banner p {
-        font-size: 20px;
-    }
-    .home-banner a {
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        width: 135px;
-    }
-}
-@media(max-width: 500px) {
-    .home-banner {
-        margin-top: 125px;
-    }
-    .home-banner h1 {
-        font-size: 28px;
-        margin-bottom: 0;
-    }
-    .home-banner p {
-        font-size: 17px;
-    }
-    .home-banner a {
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        width: 135px;
-    }
-}
 /* About Page Styles */
 .about-bg {
     background-position: 50% 60% !important;
@@ -533,7 +787,7 @@ header .container {
 }
 .about-content {
     width: 85%;
-    max-width: 650px;
+    max-width: 525px;
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -1079,22 +1333,22 @@ option {
 }
 
 ::-webkit-input-placeholder {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     font-weight: 300 !important;
     color: #999999;
 }
 :-moz-placeholder { /* older Firefox*/
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     font-weight: 0 !important;
     color: #999999;
 }
 ::-moz-placeholder { /* Firefox 19+ */ 
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     font-weight: 300 !important;
     color: #999999;
 } 
 :-ms-input-placeholder { 
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     font-weight: 300 !important;
     color: #999999;
 }
