@@ -232,6 +232,29 @@ p:last-child {
     margin-top: 8px;
     margin-bottom: 4px;
 }
+.profile-links a {
+    color: #8e99a4;
+    font-size: 15px;
+    margin: 0;
+    line-height: 28px;
+}
+.profile-links hr {
+    margin: 0;
+    border-color: #404040;
+}
+.profile-links a:hover {
+    background: #2689FE;
+}
+.profile-glance-offscreen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile-glance-offscreen h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 21px;
+    margin-left: 25px;
+}
 /* Button Style */
 .main-btn {
     color: #fff !important;
@@ -279,7 +302,7 @@ p:last-child {
 .main-navbar {
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: transparent !important;
+    background-color: transparent;
     margin-bottom: 0;
 }
 .navbar-links {
@@ -336,6 +359,9 @@ p:last-child {
 }
 .menu-toggle:hover {
     cursor: pointer;
+}
+.navbar-alt {
+    background: #070716;
 }
 @media(max-width: 768px) {
     .navbar-links {

@@ -50,7 +50,11 @@
                 
                 <div class="navbar-links">
                     <a href="for-restaurants" class="nav-link">For Restaurants</a>
+                    {% if 'token' in request.session %}
+                    <a href="logout" class="nav-link">Log Out</a>
+                    {% else %}
                     <a href="log-in" class="nav-link">Log In</a>
+                    {% endif %}
                     <a href="register" class="nav-signup-btn">Sign Up</a>
                 </div>
 

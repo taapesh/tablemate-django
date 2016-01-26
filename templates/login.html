@@ -26,7 +26,7 @@
     </head>
     
     <body class="login-bg">
-        <form method="post" action="/login">
+        <form method="post" action="/try_login">
             {% csrf_token %}
             <div class="container" style="margin-top: 60px">
                 <div class="row">
@@ -36,9 +36,12 @@
                             <hr class="login-hr" style="display:inline-block">
                             <h1 class="login-header" style="display: inline-block">SIGN IN</h1>
                             <hr class="login-hr" style="display: inline-block">
+                            {% if error %}
+                                <div>{{error}}</div>
+                            {% endif %}
 
-                            <input class="main-input" style="margin-top: 35px" placeholder="Email Address">
-                            <input class="main-input" type="password" placeholder="Password">
+                            <input name="email" class="main-input" style="margin-top: 35px" placeholder="Email Address">
+                            <input name="password" class="main-input" type="password" placeholder="Password">
 
                             <a href="#" class="forgot-password-link pull-left">Forgot Password</a>
                             <button type="submit" class="btn main-btn signin-btn">SIGN IN</button>

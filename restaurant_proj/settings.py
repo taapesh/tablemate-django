@@ -75,12 +75,26 @@ WSGI_APPLICATION = 'restaurant_proj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+'''
+
+DATABASES = {
+'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd571pji4ji6qp4',
+        'USER': 'cjokqzsylyzvpv',
+        'PASSWORD': 'bqlQp6LBa75SIIn3hTfSut4UyV',
+        'HOST': 'ec2-54-225-195-249.compute-1.amazonaws.com',   
+        'PORT': '5432', 
+    }
+}
+
 
 
 # Password validation
