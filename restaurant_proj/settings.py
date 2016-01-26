@@ -72,7 +72,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'restaurant_proj.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
