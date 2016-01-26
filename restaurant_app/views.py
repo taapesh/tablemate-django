@@ -16,8 +16,8 @@ def loginchoice(request):
 def login(request):
     return render(request, "login.html", {})
 
-def restaurants(request):
-    return render(request, "restaurants.html", {})
+def for_restaurants(request):
+    return render(request, "for-restaurants.html", {})
 
 def features(request):
     return render(request, "features.html", {})

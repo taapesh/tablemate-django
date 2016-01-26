@@ -9,6 +9,6 @@ urlpatterns = [
     url(r'^register', views.register, name='reigster'),
     url(r'^log-in', views.loginchoice, name='log-in'),
     url(r'^login', views.login, name='login'),
-    url(r'^restaurants', views.restaurants, name='restaurants'),
+    url(r'^for-restaurants', views.for_restaurants, name='for-restaurants'),
     url(r'^features', views.features, name='features')
 ]
