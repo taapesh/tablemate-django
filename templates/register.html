@@ -23,10 +23,9 @@
         <script src="/static/js/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!-- Pushy Menu -->
         <nav class="pushy pushy-left offscreen-menu">
-            <a href="#" class="btn btn-default offscreen-signup-btn">Sign Up</a>
-            <a href="#" class="btn btn-default offscreen-login-btn">Log In</a>
+            <a href="register" class="btn btn-default offscreen-signup-btn">Sign Up</a>
+            <a href="log-in" class="btn btn-default offscreen-login-btn">Log In</a>
             <hr>
             <ul class="offscreen-menu-links">
                 <li><a href="/">Home</a></li>
@@ -38,26 +37,21 @@
             <img src="/static/img/google_play_badge.png" class="offscreen-badge"></img>
         </nav>
 
-        <!-- Site Overlay -->
         <div class="site-overlay"></div>
 
-        <!-- Static navbar -->
         <nav class="main-navbar">
             <div class="container">
                 <div class="menu-toggle menu-btn text-dark">
                     <i class="icon icon_menu"></i>
                 </div>
-
                 <a class="main-logo-dark nav-logo" href="/">tablemate</a>
-                
                 <div class="navbar-links">
-                    <a href="#" class="nav-link nav-link-alt">For Restaurants</a>
-                    <a href="#" class="nav-link nav-link-alt">Log In</a>
-                    <a href="#" class="nav-signup-btn">Sign Up</a>
+                    <a href="for-restaurants" class="nav-link nav-link-alt">For Restaurants</a>
+                    <a href="log-in" class="nav-link nav-link-alt">Log In</a>
+                    <a href="register" class="nav-signup-btn">Sign Up</a>
                 </div>
             </div>
         </nav>
-        <!-- End navbar -->
 
         <div class="container register-form" align="center">
             <form method="post" action="register">
@@ -66,21 +60,17 @@
                 <h2 class="account-label">Account</h2>
                 <div class="form-label">Email</div>
                 <input class="main-input" type="text" placeholder="name@example.com">
-
                 <div class="form-label">Password</div>
                 <input class="main-input" type="password" placeholder="At least 6 characters">
-
                 <div class="form-label">Name</div>
                 <input class="main-input input-half firstname-input" type="text" placeholder="First Name">
                 <input class="main-input input-half lastname-input" type="text" placeholder="Last Name">
-
                 <div class="clearfix"></div>
                 <h2 class="payment-label">Payment</h2>
                 <div class="form-label input-70">Credit Card Number</div>
                 <div class="form-label input-30">CVV</div>
                 <input id="cc-number" class="main-input input-70" type="text" placeholder="1234 5678 9012 3456">
                 <input id="cvv" class="main-input input-30" type="text" placeholder="123">
- 
                 <div class="form-label exp-label">Expiration</div>
                 <div class="form-label zip-label zip-label-lg">Zipcode</div>
 
@@ -118,7 +108,6 @@
 
                 <div class="form-label zip-label-sm">Zipcode</div>
                 <input id="zipcode" class="main-input input-third zip-input" type="text" placeholder="78705">
-                
                 <button type="submit" class="btn main-btn create-account-btn">Create Account</button>
             </form>
         </div>

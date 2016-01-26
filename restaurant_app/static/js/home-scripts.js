@@ -21,3 +21,8 @@ $(document).ready(function(){
         $('#learn-text-3').toggle();
     });
 });
+
+$(window).load(function(){
+    $('#loader').css('opacity', 0);
+    setTimeout(function(){$('#loader').hide();}, 600);
+});
