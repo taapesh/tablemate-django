@@ -13,5 +13,8 @@ urlpatterns = [
     url(r'^logout', views.logout, name='logout'),
     url(r'^for-restaurants', views.for_restaurants, name='for-restaurants'),
     url(r'^features', views.features, name='features'),
-    url(r'^profile', views.profile, name='profile')
+
+    url(r'^meals', views.meals, name='meals'),
+    url(r'^profile', views.profile, name='profile'),
+    url(r'^payment', views.payment, name='payment'),
 ]

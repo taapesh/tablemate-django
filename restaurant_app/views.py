@@ -54,3 +54,16 @@ def profile(request):
         return redirect("login")
     else:
         return render(request, "profile.html", {})
+
+def meals(request):
+    if ("token" not in request.session):
+        return redirect("login")
+    else:
+        return render(request, "meals.html", {})
+
+def payment(request):
+    if ("token" not in request.session):
+        return redirect("login")
+    else:
+        return render(request, "payment.html", {})
+
