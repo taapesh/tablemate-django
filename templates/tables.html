@@ -30,11 +30,11 @@
             </div>
             <ul class="offscreen-menu-links profile-links">
                 <hr>
-                <li><a href="/"><span class="mif-spoon-fork" style="color: #ccc"></span> My Tables</a></li>
+                <li><a href="tables"><span class="mif-spoon-fork"></span> My Tables</a></li>
                 <hr>
-                <li><a href="/"><span class="mif-user" style="color: #ccc"></span> Profile</a></li>
+                <li><a href="profile"><span class="mif-user"></span> Profile</a></li>
                 <hr>
-                <li><a href="/"><span class="mif-credit-card" style="color: #ccc"></span> Payment</a></li>
+                <li><a href="payment"><span class="mif-credit-card"></span> Payment</a></li>
                 <hr>
                 <li><a href="logout">Log Out</a></li>
             </ul>
@@ -42,15 +42,15 @@
 
         <div class="site-overlay"></div>
 
-        <nav class="main-navbar navbar-alt navbar-account">
+        <nav class="main-navbar navbar-alt">
             <div class="container" style="text-align:center" align="center">
-                <div class="menu-toggle menu-btn">
+                <div class="menu-toggle menu-btn menu-toggle-account">
                     <i class="icon icon_menu"></i>
                 </div>
 
-                <a class="main-logo nav-logo" href="/">tablemate</a>
+                <a class="main-logo nav-logo-account" href="/">tablemate</a>
 
-                <div class="navbar-links">
+                <div class="navbar-links navbar-links-account">
                     <a href="logout" class="nav-link">Log Out</a>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                 <h2>Arya</h2>
                 <ul class="info-panel-links">
                     <hr>
-                    <li><a href="meals"><span class="mif-spoon-fork"></span> My Meals</a></li>
+                    <li><a href="meals"><span class="mif-spoon-fork"></span> My Tables</a></li>
                     <hr>
                     <li><a href="profile"><span class="mif-user"></span> Profile</a></li>
                     <hr>
@@ -74,6 +74,26 @@
             </div>
             <div class="main-panel">
                 <h1>My Tables</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Restaurant</th>
+                            <th>Bill</th>
+                            <th class="hidden-entry">City</th>
+                            <th class="hidden-entry">Payment Method
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td width="11%">12/06/2015</td>
+                            <td width="30%">Awesome Restaurant</td>
+                            <td width="10%">$32.39</td>
+                            <td width="15%" class="hidden-entry">Dallas</td>
+                            <td width="20%" class="hidden-entry"><i class="fa fa-circle secret-dot"></i><i class="fa fa-circle secret-dot"></i><i class="fa fa-circle secret-dot"></i><i class="fa fa-circle secret-dot"></i><span class="credit-number">1198</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
                 

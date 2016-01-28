@@ -5,7 +5,10 @@ import requests
 import json
 
 def home(request):
-    return render(request, "home.html", {})
+    if ('token' in request.session):
+        return redirect("tables")
+    else:
+        return render(request, "home.html", {})
 
 def about(request):
     return render(request, "about.html", {})
@@ -31,7 +34,7 @@ def try_login(request):
     token = result.get('auth_token', None)
     if (token is not None):
         request.session['token'] = token
-        return redirect("profile")
+        return redirect("tables")
     else:
         return render(request, "login.html", {"error":r.text})
 
@@ -55,11 +58,11 @@ def profile(request):
     else:
         return render(request, "profile.html", {})
 
-def meals(request):
+def tables(request):
     if ("token" not in request.session):
         return redirect("login")
     else:
-        return render(request, "meals.html", {})
+        return render(request, "tables.html", {})
 
 def payment(request):
     if ("token" not in request.session):
